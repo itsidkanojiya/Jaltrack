@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-
-const API = '/api';
+import { API } from '../../../core/apiBase';
 
 function authHeaders() {
   return { Authorization: `Bearer ${localStorage.getItem('token')}`, 'Content-Type': 'application/json' };

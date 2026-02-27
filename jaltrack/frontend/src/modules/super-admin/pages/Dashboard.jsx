@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
+import { API as API_BASE } from '../../../core/apiBase';
 
-const API = '/api/super-admin';
+const API = `${API_BASE}/super-admin`;
 const token = () => localStorage.getItem('token');
 const hdrs = () => ({ Authorization: `Bearer ${token()}` });
 

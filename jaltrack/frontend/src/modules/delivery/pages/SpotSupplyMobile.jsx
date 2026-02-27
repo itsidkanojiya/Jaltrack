@@ -1,6 +1,5 @@
 import { useState } from 'react';
-
-const API = '/api';
+import { API } from '../../../core/apiBase';
 
 function authHeaders() {
   const token = localStorage.getItem('token');

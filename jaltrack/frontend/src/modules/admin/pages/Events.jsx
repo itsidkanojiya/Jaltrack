@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-
-const API = '/api';
+import { API } from '../../../core/apiBase';
 
 const EMPTY_FORM = { name: '', startDate: '', endDate: '', rate: '', deposit: '', advancePay: '', notes: '' };
 

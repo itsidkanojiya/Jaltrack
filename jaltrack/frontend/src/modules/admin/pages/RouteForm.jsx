@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-
-const API = '/api';
+import { API } from '../../../core/apiBase';
 
 function authHeaders() {
   const token = localStorage.getItem('token');
